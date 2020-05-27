@@ -21,7 +21,7 @@ const port = process.env.PORT || 3200
 app.prepare().then(() => {
     createServer((req, res) => {
         const parsedUrl = parse(req.url, true)
-        handle(req, res, parsedUrl) <- using this handler
+        handle(req, res, parsedUrl) // <- using this handler
     }).listen(port, err => {
         if (err) throw err
         console.log('> Ready on http://localhost:' + port)
