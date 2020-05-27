@@ -2,11 +2,11 @@
 
 ## Install
 
-``` npm install wrap-next-handler ```
+` npm install wrap-next-handler `
 
 ## Usage
 
-```
+```javascript
 const wrapHandler = require('wrap-next-handler') // <- require this package
 
 const packageInfo = require("./package.json")
