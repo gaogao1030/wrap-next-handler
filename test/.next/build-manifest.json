@@ -1,0 +1,24 @@
+{
+  "devFiles": [],
+  "lowPriorityFiles": [
+    "static/LSum_eIYnBuCw-I7nsk5N/_buildManifest.js",
+    "static/LSum_eIYnBuCw-I7nsk5N/_ssgManifest.js"
+  ],
+  "pages": {
+    "/_app": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.b7677348dc25a8a270bc.js",
+      "static/chunks/commons.04ed7dae90f227b7b7c6.js",
+      "static/runtime/main-5d2ddbe4b5a5ba359cd7.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-c212667a5f965e81e004.js",
+      "static/chunks/framework.b7677348dc25a8a270bc.js",
+      "static/chunks/commons.04ed7dae90f227b7b7c6.js",
+      "static/runtime/main-5d2ddbe4b5a5ba359cd7.js"
+    ],
+    "/_polyfills": [
+      "static/runtime/polyfills-de4e88e1e559986440b7.js"
+    ]
+  }
+}

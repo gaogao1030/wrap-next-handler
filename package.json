@@ -1,0 +1,37 @@
+{
+  "name": "wrap-next-handler",
+  "version": "1.0.1",
+  "description": "Kubernetes custom metrics hpa deploy for nextjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaogao1030/wrap_next_handler.git"
+  },
+  "keywords": [
+    "nextjs",
+    "kubernetes",
+    "prometheus",
+    "healthz",
+    "api"
+  ],
+  "author": "gaogao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaogao1030/wrap_next_handler/issues"
+  },
+  "homepage": "https://github.com/gaogao1030/wrap_next_handler#readme",
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "prom-client": "^12.0.0"
+  },
+  "devDependencies": {
+    "next": "^9.4.2",
+    "node-fetch": "^2.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tap": "^14.10.7"
+  }
+}
