@@ -1,19 +1,19 @@
 const httpProxy = require('http-proxy')
 const proxyServer = httpProxy.createProxyServer({});
 
-const proxy = (env) => {
-  let target = 'https://ec.rosepie.com'
+const proxy = (env, opts = { proxy: {} }) => {
+  let target = opts['proxy']['production']|| 'https://ec.rosepie.com'
   
   if (env === 'beta') {
-    target = 'https://n.yunchuangfu.com'
+    target = opts['proxy']['beta'] || 'https://p.beta.k8s.rose-pie.com'
   }
   
   if (['rel', 'release'].includes(env)) {
-    target = 'https://n.meiguipai.net'
+    target = opts['proxy']['release'] || 'https://n.meiguipai.net'
   }
   
   if (['pre_production', 'preProduction'].includes(env)) {
-    target = 'https://n.meiguipai.com'
+    target = opts['proxy']['pre_production'] || 'https://n.meiguipai.com'
   }
 
   return (req, res) => {
