@@ -1,7 +1,6 @@
 const { register, http_requests_total } = require('./monitor')
-const proxy = require('./proxy')
 
-const wrapNextHanlder = (app, env, opts) => {
+const wrapNextHanlder = (app) => {
   const handle = app.getRequestHandler()
   return (req, res, parsedUrl) => {
     const { pathname, query } = parsedUrl
@@ -29,10 +28,6 @@ const wrapNextHanlder = (app, env, opts) => {
       return 
     }
 
-    if (req.url.indexOf('/api/p/') === 0) {
-      proxy(env, opts)(req, res)
-      return 
-    }
     handle(req, res, parsedUrl)
   }
 }
